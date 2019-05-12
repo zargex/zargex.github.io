@@ -1,0 +1,7 @@
+{% assign certs = site.collections | where: "label", "certificates_files" | first %}
+{% assign certificates =  certs.files | sort: 'name' %}
+
+{% for certificate in certificates  %}
+  [{{ certificate.name | replace: "_", " " | remove: ".pdf" }}]({{ certificate.path | remove_first: "_" | absolute_url }})
+{% endfor %}
+
