@@ -22,6 +22,7 @@ gem "jekyll-theme-hydeout", "~> 3.3"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-polyglot"
+  gem 'jekyll-asciidoc'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
