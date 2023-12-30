@@ -1,4 +1,21 @@
 [
   
+  {
+    "title": "Disabling Wifi and Bluetooth in RPi 4",
+    "url": "/posts/disabling-wifi/",
+    "categories": "self-hosted",
+    "tags": "raspberry-pi, debian",
+    "date": "2023-12-29 00:00:00 -0500",
+    
+
+
+
+
+
+    
+    "snippet": "I started to use my raspberry pi 4 not long ago. As I use Debian the obvious choise was to flash the Raspberry Pi Debian image into the SD card.Now, as I’m planning connect it with a ethernet cable...",
+    "content": "I started to use my raspberry pi 4 not long ago. As I use Debian the obvious choise was to flash the Raspberry Pi Debian image into the SD card.Now, as I’m planning connect it with a ethernet cable, I decided to disable the radio antennas.I tried to ways to achieve that.Disabling them using config.txtTo do that you only need to:  Create (or modify) /etc/default/raspi-firmware-custom with:    # Disable bluetooth and wifidtoverlay=disable-wifidtoverlay=disable-bt            Run update-initramfs -u -k all    This basically will update the /boot/firmware/config.txt with the above lines.    Remember that raspberry pi uses a config.txt file to modify the settings you would expect in the BIOS/UEFI in a normal PC.Now, after I restarted it, I noticed it didn’t work. Checking /etc/default/raspi-firmware I readMaybe not all options are supported..So, I proceed to disable the modules.Disabling the wifi/bt modules  Create this file /etc/modprobe.d/raspi-blacklist.conf and add:     # Disable wifi blacklist brcmfmac blacklist brcmutil # Disable bluetooth blacklist hci_uart blacklist btbcm blacklist btintel blacklist rfcom blacklist btqca blacklist btsdio blacklist bluetooth        RestartThis time it worked! \\o/."
+  }
+  
 ]
 
