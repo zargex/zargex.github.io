@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://adolfoparra.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adolfoparra.com/" rel="alternate" type="text/html" /><updated>2021-11-15T19:34:43-05:00</updated><id>https://adolfoparra.com/</id><title type="html">Jesús Adolfo Parra Parra</title><subtitle>A personal webpage</subtitle></feed>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://adolfoparra.com/</id>
+  <title>Jesús Adolfo Parra Parra</title>
+  <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
+  <updated>2023-12-29T22:07:45-05:00</updated>
+  <author>
+    <name>Jesús Adolfo Parra Parra</name>
+    <uri>https://adolfoparra.com/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://adolfoparra.com/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://adolfoparra.com/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2023 Jesús Adolfo Parra Parra </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+</feed>
+
+
