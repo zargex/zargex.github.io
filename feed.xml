@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2023-12-30T00:26:11-05:00</updated>
+  <updated>2024-01-01T16:11:30-05:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -13,10 +13,55 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://adolfoparra.com/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2023 Jesús Adolfo Parra Parra </rights>
+  <rights> © 2024 Jesús Adolfo Parra Parra </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Installing Pi-hole in my raspberry pi</title>
+    <link href="https://adolfoparra.com/posts/installing-pihole/" rel="alternate" type="text/html" title="Installing Pi-hole in my raspberry pi" />
+    <published>2024-01-01T00:00:00-05:00</published>
+  
+    <updated>2024-01-01T00:00:00-05:00</updated>
+  
+    <id>https://adolfoparra.com/posts/installing-pihole/</id>
+    <content src="https://adolfoparra.com/posts/installing-pihole/" />
+    <author>
+      <name>Jesús Adolfo Parra Parra</name>
+    </author>
+
+  
+    
+    <category term="self-hosted" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Due to the high number of obnoxious ads in modern internet, I decided to block as much
+as I can at a DNS level using Pi-hole in my RPi.
+
+
+  DNS (Domain Name System) is the one that allow us to use www.google.com instead of
+142.251.41.68. Basically it translate domains names (like facebook.com) to IP address 
+(like 31.13.80.36), so we don’t have to remember a bunch of numbers.
+
+
+Installing it
+
+I...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
