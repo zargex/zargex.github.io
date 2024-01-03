@@ -48,7 +48,7 @@
 <meta property="twitter:title" content="Installing Pi-hole in my raspberry pi" />
 <meta name="twitter:site" content="@4d0lfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-01T00:00:00-05:00","datePublished":"2024-01-01T00:00:00-05:00","description":"Due to the high number of obnoxious ads in modern internet, I decided to block as much as I can at a DNS level using Pi-hole in my RPi.","headline":"Installing Pi-hole in my raspberry pi","mainEntityOfPage":{"@type":"WebPage","@id":"https://adolfoparra.com/posts/installing-pihole/"},"url":"https://adolfoparra.com/posts/installing-pihole/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-03T16:57:15-05:00","datePublished":"2024-01-01T00:00:00-05:00","description":"Due to the high number of obnoxious ads in modern internet, I decided to block as much as I can at a DNS level using Pi-hole in my RPi.","headline":"Installing Pi-hole in my raspberry pi","mainEntityOfPage":{"@type":"WebPage","@id":"https://adolfoparra.com/posts/installing-pihole/"},"url":"https://adolfoparra.com/posts/installing-pihole/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -539,6 +539,148 @@
 
 
 
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -583,6 +725,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -598,6 +751,17 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -673,6 +837,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1704319035"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Jan  3, 2024
+</time>
+
+        </span>
+      
 
       
 
@@ -711,9 +898,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="719 words"
+  title="893 words"
 >
-  <em>3 min</em> read</span>
+  <em>4 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -838,6 +1025,57 @@ At the bottom you can enable or disable any blocklist.
 Finally, you need to update list of blocked domains, on the left, click on <strong>Tools</strong>, then click on <strong>Update Gravity</strong> and now click on the <strong>Update</strong> buttom.</p>
 </blockquote>
 
+<h2 id="how-it-works"><span class="me-2">How it works:</span><a href="#how-it-works" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>What Pi-hole does is to return an special IP address (<code class="language-plaintext highlighter-rouge">0.0.0.0</code>) <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> which mean <strong>this host on this network</strong>, thus making any request unroutable.</p>
+
+<p>Let’s see the difference:</p>
+
+<pre><code class="language-mermaid">sequenceDiagram
+title Normal scenario
+    participant My Computer
+    participant ISP DNS
+    participant Internet
+    My Computer-&gt;&gt;ISP DNS: I want to visit facebook.com
+    ISP DNS-&gt;&gt;My Computer: facebook.com is 31.13.80.36
+    My Computer -&gt;&gt; Internet: Request to 31.13.80.36
+    Internet -&gt;&gt; My Computer: Here you go
+</code></pre>
+
+<p>Now, that sequence would happen when you when the browser shows you an ad. It needs
+first the IP address of the server who has the ad to request it.</p>
+
+<p>But now Pi-hole will return an invalid address.</p>
+
+<pre><code class="language-mermaid">sequenceDiagram
+title Pi-hole scenario
+    participant My Computer
+    participant Pi-hole
+    participant Internet
+    My Computer-&gt;&gt;Pi-hole: I want to visit trackingads.com
+    Pi-hole-&gt;&gt;My Computer: trackingads.com is "0.0.0.0"
+    My Computer -&gt;&gt; My Computer: Can not connect, nothing to show
+</code></pre>
+
+<h3 id="real-example"><span class="me-2">Real example</span><a href="#real-example" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>If I visit <a href="www.cnn.com">https://www.cnn.com/</a> I can see the following errors in Firefox:</p>
+
+<p><a href="/assets/img/firefox-blocked.png" class="popup img-link  shimmer"><img src="/assets/img/firefox-blocked.png" alt="Firefox errors" loading="lazy"></a>
+<em>Errors in Firefox network monitor</em></p>
+
+<p>And we can verify those in the Pi-hole logs</p>
+
+<p><a href="/assets/img/pi-hole-blocked.png" class="popup img-link  shimmer"><img src="/assets/img/pi-hole-blocked.png" alt="Pi-hole logs" loading="lazy"></a>
+<em>Pi-hole logs</em></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://en.wikipedia.org/wiki/0.0.0.0">wikipedia</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
   </div>
 
   <div class="post-tail-wrapper text-muted">
@@ -945,6 +1183,21 @@ Finally, you need to update list of blocked domains, on the left, click on <stro
 
 
 
+
+  <section id="access-lastmod">
+    <h2 class="panel-heading">Recently Updated</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/installing-pihole/">Installing Pi-hole in my raspberry pi</a>
+        </li>
+      
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
 
 
               <!-- The trending tags list -->
@@ -1444,9 +1697,16 @@ Now, as I’m planning connect it with a ethernet ca...
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js,npm/mermaid@10.6.0/dist/mermaid.min.js"></script>
 
 
 
@@ -1459,6 +1719,66 @@ Now, as I’m planning connect it with a ethernet ca...
 
 
 
+
+    
+      <!-- mermaid-js loader -->
+<script type="text/javascript">
+  (function () {
+    function updateMermaid(event) {
+      if (event.source === window && event.data && event.data.direction === ModeToggle.ID) {
+        const mode = event.data.message;
+
+        if (typeof mermaid === 'undefined') {
+          return;
+        }
+
+        let expectedTheme = mode === ModeToggle.DARK_MODE ? 'dark' : 'default';
+        let config = { theme: expectedTheme };
+
+        /* Re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
+        $('.mermaid').each(function () {
+          let svgCode = $(this).prev().children().html();
+          $(this).removeAttr('data-processed');
+          $(this).html(svgCode);
+        });
+
+        mermaid.initialize(config);
+        mermaid.init(undefined, '.mermaid');
+      }
+    }
+
+    let initTheme = 'default';
+    const html = document.documentElement;
+
+    if (
+      (html.hasAttribute('data-mode') && html.getAttribute('data-mode') === 'dark') ||
+      (!html.hasAttribute('data-mode') && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      initTheme = 'dark';
+    }
+
+    let mermaidConf = {
+      theme: initTheme /* <default|dark|forest|neutral> */
+    };
+
+    /* Create mermaid tag */
+    document.querySelectorAll('pre>code.language-mermaid').forEach((elem) => {
+      const svgCode = elem.textContent;
+      const backup = elem.parentElement;
+      backup.classList.add('unloaded');
+      /* create mermaid node */
+      let mermaid = document.createElement('pre');
+      mermaid.classList.add('mermaid');
+      const text = document.createTextNode(svgCode);
+      mermaid.appendChild(text);
+      backup.after(mermaid);
+    });
+
+    mermaid.initialize(mermaidConf);
+
+    window.addEventListener('message', updateMermaid);
+  })();
+</script>
 
     
 
