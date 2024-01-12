@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Installing Plato and KOReader in my Kobo",
+    "url": "/posts/flashing-kobo/",
+    "categories": "kobo",
+    "tags": "firmware, ereader",
+    "date": "2024-01-11 00:00:00 -0500",
+    
+
+
+
+
+
+    
+    "snippet": "Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing acustom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.I am...",
+    "content": "Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing acustom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.I am going to install KOReader1 and Plato2. Both are custom readers for Kobo (and other devices) with more features than the original.I understand that KOReader has a lot of options while Plato is more streamline and it is better to read PDFs.Getting the filesIn this link we find the instructions to install each of the readers (or both at the same time) as well a little script to make everything easier.  Get the zip, in my case KOReader and Plato  Get the script.  The above links points to an specific version, in case they are broken. Review the forum thread and use the new links.Installing the files  Do a full restart of the kobo, as it is suggested in the forum.  With the Kobo in the home screen (without opening any book), connect the kobo to the computer and mount it.  Run the script and follow the instructions.  Now, eject and unplug the kobo.  My Kobo restarted after I ejected it. Depending of your device, maybe you have to restart it manually.During a the restart, Kobo will install the new readers and other things.ResultNow I see a little new menu call NickelMenu at the botton right corner.That is the menu we are going to use to launch Plato and KOReader.NickeMenuKOReaderThe first thing I saw, was the tutorial. I can navigate throught the files like a normal unix filesystem (the home is /mnt/onboard/) and it shows me folders with the name of the authors.Books in KOReaderI opened The Prince and among the options I found a two columns setting.Using the option of two columnsThis is how the top menu looks like.KOReader top menuReally insteresting, and I just learned that there is a plugin for KOReader to enable SSH!.I will review the other plugins.PlatoOpening Plato for first time it didn’t offer any tutorial or guide, instead, a very intuitive homescreen (really similar to the original one).Books in PlatoI opened again The Prince to see the options. To the right I can tap in the icon next to the magnifying glass to go to the chapters and jump to a specific one.Plato bottom menuThis is how the Plato menu looks like. Effectly, less options but still interesting, and it has some applications.Plato top menuIt has a calculator! , that’s amazing!.I didn’t expect a calculatorConclusionsBoth KOReader and Plato look very promising. I have the feeling that powerusers will prefer KOReader for its options and customizations, while people who only wants a better experience will be happy with Plato.Meanwhile, I will use both to decide and probably will use one or the other depending on what I am reading. For example, KOReader has some features to read manga3. I need to try those.  The script will install two component more, NickelMenu4 and KFMon5.Nickelmenu is the little menu I showed you, while KFMon allows us to launch specific commands when abook is opened.            KOEreader &#8617;              Plato &#8617;              Panel zoom &#8617;              NickelMenu &#8617;              KFMon &#8617;      "
+  },
+  
+  {
     "title": "Installing Pi-hole in my raspberry pi",
     "url": "/posts/installing-pihole/",
     "categories": "self-hosted",
