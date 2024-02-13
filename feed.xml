@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2024-02-11T23:25:27-05:00</updated>
+  <updated>2024-02-12T23:31:27-05:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -20,11 +20,11 @@
 
   
   <entry>
-    <title>Exports and dictionaries in KOReader</title>
-    <link href="https://adolfoparra.com/posts/exports-dictionaries/" rel="alternate" type="text/html" title="Exports and dictionaries in KOReader" />
+    <title>Add dictionaries and export notes in KOReader</title>
+    <link href="https://adolfoparra.com/posts/exports-dictionaries/" rel="alternate" type="text/html" title="Add dictionaries and export notes in KOReader" />
     <published>2024-02-11T00:00:00-05:00</published>
   
-    <updated>2024-02-11T00:00:00-05:00</updated>
+    <updated>2024-02-12T23:31:10-05:00</updated>
   
     <id>https://adolfoparra.com/posts/exports-dictionaries/</id>
     <content src="https://adolfoparra.com/posts/exports-dictionaries/" />
@@ -48,7 +48,7 @@
 
       I have been playing with KOReader for some days and so far it is very good.
 It has a lot of options to customize the experience of using my Kobo, at first it
-could be overwhelming but I think it worth it.
+could be overwhelming but I think it is worth it.
 
 Now, I really missed it didn’t have a dictionary included. So let’s see 
 how to add one.
@@ -57,7 +57,7 @@ How to add a dictionary to KOReader
 
 
   Find a dictionary in the StarDict format.
-  Copy the dictiona...
+  Copy the dicti...
     </summary>
   
 
