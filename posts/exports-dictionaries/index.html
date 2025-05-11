@@ -15,26 +15,21 @@
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" >
-  <!-- The Head -->
-
-<head>
+  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-  >
+  ><!-- Setup Open Graph image -->
 
   
 
-  
-
-  
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.3" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Add dictionaries and export notes in KOReader" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="I have been playing with KOReader for some days and so far it is very good. It has a lot of options to customize the experience of using my Kobo, at first it could be overwhelming but I think it is worth it." />
@@ -51,7 +46,6 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-12T23:31:10-05:00","datePublished":"2024-02-11T00:00:00-05:00","description":"I have been playing with KOReader for some days and so far it is very good. It has a lot of options to customize the experience of using my Kobo, at first it could be overwhelming but I think it is worth it.","headline":"Add dictionaries and export notes in KOReader","mainEntityOfPage":{"@type":"WebPage","@id":"https://adolfoparra.com/posts/exports-dictionaries/"},"url":"https://adolfoparra.com/posts/exports-dictionaries/"}</script>
 <!-- End Jekyll SEO tag -->
 
-  
 
   <title>Add dictionaries and export notes in KOReader | Jesús Adolfo Parra Parra
   </title>
@@ -66,7 +60,9 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
-<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+
+  <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+
 <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
 <meta name="apple-mobile-web-app-title" content="Jesús Adolfo Parra Parra">
 <meta name="application-name" content="Jesús Adolfo Parra Parra">
@@ -75,37 +71,47 @@
 <meta name="theme-color" content="#ffffff">
 
 
+  <!-- Resource Hints -->
   
     
-      <link rel="preconnect" href="https://fonts.googleapis.com" >
-      <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+      
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+      
     
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+      
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" >
+      
     
-      <link rel="preconnect" href="https://fonts.googleapis.com" >
-      <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+      
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" >
+      
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+      
     
-      <link rel="preconnect" href="https://cdn.jsdelivr.net" >
-      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
-    
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
-  
-
-  <!-- GA -->
   
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
-
+  <!-- Theme style -->
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
+  <!-- Web Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.1/css/all.min.css">
+
+  <!-- 3rd-party Dependencies -->
+
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css">
   
 
   
@@ -113,156 +119,128 @@
   
 
   
-    <!-- Manific Popup -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
-  <!-- JavaScript -->
+  <!-- Scripts -->
+
+  <script src="/assets/js/dist/theme.min.js"></script>
+
+  <!-- JS selector for site. -->
+
+<!-- commons -->
+
+
+
+<!-- layout specified -->
+
 
   
-    <!-- Switch the mode between dark and light. -->
 
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
 
-      let self = this;
 
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
 
-          self.clearMode();
-        }
 
-        self.notify();
-      });
-    } /* constructor() */
 
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
 
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
 
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
 
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
 
-    get hasMode() {
-      return this.mode != null;
-    }
 
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
 
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
 
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
 
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
 
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
+  
+    
 
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
+    
 
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
+  
 
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
+  
+    
 
-  const modeToggle = new ModeToggle();
-</script>
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
+
+
+
+
+
+
+
+<script defer src="/assets/js/dist/post.min.js"></script>
+
+
+
+<!-- Pageviews -->
+
+  
+
+  
+
+
 
   
 
@@ -276,16 +254,9 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle">
-      
-        
-        <img src="/images/aboutme.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
-      
-    </a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="/./images/aboutme.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
-    <h1 class="site-title">
-      <a href="/">Jesús Adolfo Parra Parra</a>
-    </h1>
+    <a class="site-title d-block" href="/">Jesús Adolfo Parra Parra</a>
     <p class="site-subtitle fst-italic mb-0">A blog dedicated to tech, opensource and gaming</p>
   </header>
   <!-- .profile-wrapper -->
@@ -346,7 +317,7 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
         <i class="fas fa-adjust"></i>
       </button>
 
@@ -460,9 +431,7 @@
         
           
             <span>
-              <a href="/">
-                Home
-              </a>
+              <a href="/">Home</a>
             </span>
 
           
@@ -492,7 +461,7 @@
       <i class="fas fa-search fa-fw"></i>
     </button>
 
-    <search class="align-items-center ms-3 ms-lg-0">
+    <search id="search" class="align-items-center ms-3 ms-lg-0">
       <i class="fas fa-search fa-fw"></i>
       <input
         class="form-control"
@@ -540,12 +509,6 @@
 
 
   
-  
-
-  <!-- CDN URL -->
-  
-
-  <!-- Add image path -->
   
 
   
@@ -827,7 +790,7 @@ how to add one.</p>
   <li>Copy the dictionary to <code class="language-plaintext highlighter-rouge">.adds/koreader/data/dict/</code></li>
 </ol>
 
-<p>I tried an english dictionary made from Wiktionary<sup id="fnref:ebook-reader-dict" role="doc-noteref"><a href="#fn:ebook-reader-dict" class="footnote" rel="footnote">1</a></sup>.</p>
+<p>I tried an english dictionary made from Wiktionary<sup id="fnref:ebook-reader-dict"><a href="#fn:ebook-reader-dict" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>.</p>
 
 <p>After I decompress the file, it looks like this:</p>
 
@@ -887,7 +850,7 @@ Both options are in the same menu.</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:ebook-reader-dict" role="doc-endnote">
+    <li id="fn:ebook-reader-dict">
       <p><a href="https://github.com/BoboTiG/ebook-reader-dict/blob/master/docs/en/README.md">ebook-reader-dict</a> <a href="#fnref:ebook-reader-dict" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
@@ -925,7 +888,6 @@ Both options are in the same menu.</p>
       "
     >
       <div class="license-wrapper">
-
         
       </div>
 
@@ -979,9 +941,9 @@ Both options are in the same menu.</p>
           </main>
 
           <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
             <div class="access">
-              <!-- Get the last 5 posts from lastmod list. -->
+              <!-- Get 5 last posted/updated posts -->
 
 
 
@@ -1004,6 +966,13 @@ Both options are in the same menu.</p>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/changing-battery/">Changing battery of robot vaccum Lefant M213S</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/exports-dictionaries/">Add dictionaries and export notes in KOReader</a>
         </li>
       
@@ -1019,6 +988,13 @@ Both options are in the same menu.</p>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/installing-pihole/">Installing Pi-hole in my raspberry pi</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/disabling-wifi/">Disabling Wifi and Bluetooth in RPi 4</a>
         </li>
       
     </ul>
@@ -1221,8 +1197,12 @@ Both options are in the same menu.</p>
 
 
 
-  <section id="toc-wrapper" class="ps-0 pe-4">
-    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+
+
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
     <nav id="toc"></nav>
   </section>
 
@@ -1259,22 +1239,23 @@ Both options are in the same menu.</p>
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1311,18 +1292,10 @@ Both options are in the same menu.</p>
 
               <h4 class="pt-0 my-2">Installing Plato and KOReader in my Kobo</h4>
               <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing a
+                <p>Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing a
 custom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.
 
-I...
-                </p>
+I...</p>
               </div>
             </div>
           </a>
@@ -1364,7 +1337,7 @@ I...
 
             
               
-              <!--  The comments switcher -->
+              <!-- The comments switcher -->
 
 
             
@@ -1378,10 +1351,13 @@ I...
     flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
   "
 >
-  <p>
-    ©
+  <p>©
     <time>2025</time>
-    <a href="https://twitter.com/4d0lfo">Jesús Adolfo Parra Parra</a>.
+
+    
+      <a href="https://twitter.com/4d0lfo">Jesús Adolfo Parra Parra</a>.
+    
+
     
       <span
         data-bs-toggle="tooltip"
@@ -1391,7 +1367,14 @@ I...
     
   </p>
 
-  <p>Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
+  <p>Using the <a
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="v7.2.4"
+        href="https://github.com/cotes2020/jekyll-theme-chirpy"
+        target="_blank"
+        rel="noopener"
+      >Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
 </footer>
 
@@ -1400,7 +1383,7 @@ I...
 
         <!-- The Search results -->
 
-<div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+<div id="search-result-wrapper" class="d-flex justify-content-center d-none">
   <div class="col-11 content">
     <div id="search-hints">
       <!-- The trending tags list -->
@@ -1604,7 +1587,7 @@ I...
       </aside>
     </div>
 
-    <div id="mask"></div>
+    <div id="mask" class="d-none position-fixed w-100 h-100 z-1"></div>
 
     
       <aside
@@ -1634,130 +1617,7 @@ I...
 
     
 
-    <!-- JavaScripts -->
-
-    <!-- JS selector for site. -->
-
-<!-- commons -->
-
-
-
-<!-- layout specified -->
-
-
-  
-
-  
-    <!-- image lazy-loading & popup & clipboard -->
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-
-
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
-
-
-
-
-
-
-<script defer src="/assets/js/dist/post.min.js"></script>
-
-
-
-
-
+    <!-- Embedded scripts -->
 
     
 
@@ -1771,30 +1631,32 @@ I...
 
 
 <script>
-  /* Note: dependent library will be loaded in `js-selector.html` */
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('search-results'),
-    json: '/assets/js/data/search.json',
-    searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
-    noResultsText: '<p class="mt-5"></p>',
-    templateMiddleware: function(prop, value, template) {
-      if (prop === 'categories') {
-        if (value === '') {
-          return `${value}`;
-        } else {
-          return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('search-results'),
+      json: '/assets/js/data/search.json',
+      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
+      noResultsText: '<p class="mt-5">Oops! No results found.</p>',
+      templateMiddleware: function(prop, value, template) {
+        if (prop === 'categories') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+          }
         }
-      }
 
-      if (prop === 'tags') {
-        if (value === '') {
-          return `${value}`;
-        } else {
-          return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+        if (prop === 'tags') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+          }
         }
       }
-    }
+    });
   });
 </script>
 
