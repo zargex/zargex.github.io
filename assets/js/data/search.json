@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Fixing Survivin Mars",
+    "url": "/posts/surviving-mars/",
+    "categories": "gaming",
+    "tags": "debian, repairs",
+    "date": "2025-05-31 00:00:00 -0400",
+    
+
+
+
+
+
+    
+    "snippet": "The problemI noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.The objec...",
+    "content": "The problemI noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.The objects seems to be “floating” and the shadows are not touching anything.  I discovered that using the windowed mode, my second monitor keeps working, but the glitches still.I added some photos below.Both monitors are working fine just before I start the gameMy left monitor goes black and only the superior corner left of the other one shows somethingOnly my right monitor is working nowNow the glitches:The installations and dome are floatingEven the rocks are in the airI tried -w 1920 -h 1080 and didn’t work  Probably because those options are for valve/source gamesNow if we try with proton, my dual monitor setup works as expected and there is not glitchesWith proton it works flawless  I believe it works because wine can emulate a virtual desktop, but I still not understand 100%why it works.I am going to show you what I did.IdeaI guessed the main issue was Surviving Mars seeing my two monitors just as one really big (that would explain that just the corner shows something while starting).So I wanted to try gamescope https://github.com/ValveSoftware/gamescope which is a microcompositor which allows me to set up custom resolution that the game would “see”.Trying gamescopeDebianAs I use Debian I tried first with the version in the apt repo, I ran:sudo aptitude install gamescopeI tried several times, nevertheless it didn’t work. I just assumed that it is because I ran steam with flatpak.So I just removed the package and proceeded to install it using flatpak.FlatpakI ranflatpak install gamescopeand I chose runtime/org.freedesktop.Platform.VulkanLayer.gamescope/x86_64/24.08.Now gamescope finally works. Now I only need to find the correct setting.ResultsI tried several gamescope options and they help me with the glitches, but I couldn’t get to fix the issue with the second monitor going black.Just gamescope -- %command% in the launch option was enough to fix the glitches.I decided to start the game in windowed mode and voilà, the game was running and my second monitor was showing discord.No glitches and both monitors workingBut even with a window maximized I can see the title bar and my other open programs in the botton bar and I don’t like to play that way. Thankfully it has a simple solution, I could simply click the window bar and choose  fullscreen and KDE will do the rest.Location of the fullscreen option in KDEHowever, doing that every time is silly. KDE allows you to define some rules to apply to windows and that exactly what I need.Instead of just click fullscreen, click on Configure special application settings…  and a new window will appears.Then click in add property… at the botton, look for Fullscreen, select Apply Initially and __Yes_. Finally __Apply_ and we are done.Window rules options for Surviving MarsNow I can play Surviving Mars in 1920x1080 fullscreen without any glitch and linux native.I kept this option gamescope -H 1080 -b -- %command% just for consistency.Now I can play in fullscreen without any issueFinal thoughts: I like to solve problems, but for any other person probably it would be better just to use proton."
+  },
+  
+  {
     "title": "Changing battery of robot vaccum Lefant M213S",
     "url": "/posts/changing-battery/",
     "categories": "Tinkering",

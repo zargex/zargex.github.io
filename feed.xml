@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2025-05-10T21:21:05-04:00</updated>
+  <updated>2025-05-31T19:16:43-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -17,6 +17,39 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Fixing Survivin Mars</title>
+    <link href="https://adolfoparra.com/posts/surviving-mars/" rel="alternate" type="text/html" title="Fixing Survivin Mars" />
+    <published>2025-05-31T00:00:00-04:00</published>
+  
+    <updated>2025-05-31T00:00:00-04:00</updated>
+  
+    <id>https://adolfoparra.com/posts/surviving-mars/</id>
+    <content type="text/html" src="https://adolfoparra.com/posts/surviving-mars/" />
+    <author>
+      <name>Jesús Adolfo Parra Parra</name>
+    </author>
+
+  
+    
+    <category term="gaming" />
+    
+  
+
+  <summary>The problem
+I noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.
+
+The objects seems to be “floating” and the shadows are not touching anything.
+
+
+  I discovered that using the windowed mode, my second monitor keeps working, but the glitches still.
+
+
+I added some photos be...</summary>
+
+  </entry>
 
   
   <entry>
@@ -153,40 +186,6 @@ as I can at a DNS level using Pi-hole in my RPi.
 Installing it
 
 I...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Disabling Wifi and Bluetooth in RPi 4</title>
-    <link href="https://adolfoparra.com/posts/disabling-wifi/" rel="alternate" type="text/html" title="Disabling Wifi and Bluetooth in RPi 4" />
-    <published>2023-12-29T00:00:00-05:00</published>
-  
-    <updated>2023-12-29T00:00:00-05:00</updated>
-  
-    <id>https://adolfoparra.com/posts/disabling-wifi/</id>
-    <content type="text/html" src="https://adolfoparra.com/posts/disabling-wifi/" />
-    <author>
-      <name>Jesús Adolfo Parra Parra</name>
-    </author>
-
-  
-    
-    <category term="self-hosted" />
-    
-  
-
-  <summary>I started to use my raspberry pi 4 not long ago. As I use Debian the obvious choise 
-was to flash the Raspberry Pi Debian image into the SD card.
-
-Now, as I’m planning connect it with a ethernet cable, I decided to disable the radio antennas.
-I tried to ways to achieve that.
-
-Disabling them using config.txt
-To do that you only need to:
-
-
-  Create (or modify) /etc/default/raspi-firmware-custom w...</summary>
 
   </entry>
 
