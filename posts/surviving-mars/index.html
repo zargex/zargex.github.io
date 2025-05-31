@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="Fixing Survivin Mars" />
 <meta name="twitter:site" content="@4d0lfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-31T00:00:00-04:00","datePublished":"2025-05-31T00:00:00-04:00","description":"The problem I noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.","headline":"Fixing Survivin Mars","mainEntityOfPage":{"@type":"WebPage","@id":"https://adolfoparra.com/posts/surviving-mars/"},"url":"https://adolfoparra.com/posts/surviving-mars/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-31T19:43:52-04:00","datePublished":"2025-05-31T00:00:00-04:00","description":"The problem I noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.","headline":"Fixing Survivin Mars","mainEntityOfPage":{"@type":"WebPage","@id":"https://adolfoparra.com/posts/surviving-mars/"},"url":"https://adolfoparra.com/posts/surviving-mars/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1192,6 +1192,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -1199,6 +1221,38 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -1250,6 +1304,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1748735032"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  May 31, 2025
+</time>
+
+        </span>
+      
 
       
 
@@ -1299,7 +1376,7 @@
   </header>
 
   <div class="content">
-    <h1 id="the-problem">The problem</h1>
+    <h2 id="the-problem"><span class="me-2">The problem</span><a href="#the-problem" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>I noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.</p>
 
 <p>The objects seems to be “floating” and the shadows are not touching anything.</p>
@@ -1345,14 +1422,14 @@ why it works.</p>
 
 <p>I am going to show you what I did.</p>
 
-<h1 id="idea">Idea</h1>
+<h2 id="idea"><span class="me-2">Idea</span><a href="#idea" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>I guessed the main issue was Surviving Mars seeing my two monitors just as one really big (that would explain that just the corner shows something while starting).</p>
 
 <p>So I wanted to try gamescope https://github.com/ValveSoftware/gamescope which is a microcompositor which allows me to set up custom resolution that the game would “see”.</p>
 
-<h1 id="trying-gamescope">Trying gamescope</h1>
+<h2 id="trying-gamescope"><span class="me-2">Trying gamescope</span><a href="#trying-gamescope" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="debian"><span class="me-2">Debian</span><a href="#debian" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="debian"><span class="me-2">Debian</span><a href="#debian" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p>As I use Debian I tried first with the version in the apt repo, I ran:</p>
 <div class="language-terminal highlighter-rouge"><div class="code-header">
         <span data-label-text="Terminal"><i class="fas fa-code fa-fw small"></i></span>
@@ -1363,7 +1440,7 @@ why it works.</p>
 
 <p>So I just removed the package and proceeded to install it using flatpak.</p>
 
-<h2 id="flatpak"><span class="me-2">Flatpak</span><a href="#flatpak" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="flatpak"><span class="me-2">Flatpak</span><a href="#flatpak" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>I ran</p>
 <div class="language-terminal highlighter-rouge"><div class="code-header">
@@ -1375,7 +1452,7 @@ why it works.</p>
 
 <p>Now gamescope finally works. Now I only need to find the correct setting.</p>
 
-<h1 id="results">Results</h1>
+<h2 id="results"><span class="me-2">Results</span><a href="#results" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>I tried several gamescope options and they help me with the glitches, but I couldn’t get to fix the issue with the second monitor going black.</p>
 
