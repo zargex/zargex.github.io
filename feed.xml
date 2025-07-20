@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2025-05-31T19:43:55-04:00</updated>
+  <updated>2025-07-20T14:06:45-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -17,6 +17,39 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Trying Google Search Console</title>
+    <link href="https://adolfoparra.com/posts/google-console/" rel="alternate" type="text/html" title="Trying Google Search Console" />
+    <published>2025-07-20T00:00:00-04:00</published>
+  
+    <updated>2025-07-20T00:00:00-04:00</updated>
+  
+    <id>https://adolfoparra.com/posts/google-console/</id>
+    <content type="text/html" src="https://adolfoparra.com/posts/google-console/" />
+    <author>
+      <name>Jesús Adolfo Parra Parra</name>
+    </author>
+
+  
+    
+    <category term="tinkering" />
+    
+  
+
+  <summary>The Search Console is a tool from Google that help us to improve the position of our webpages in Google search results.
+
+It offers ways to measure traffic, perfomance and fix issues1.
+
+I want to give a try to make my blog a little bit better and give it more presence on the web.
+
+Currently if I check the details of the search result of one of my blog post it would look like this:
+
+
+Details show...</summary>
+
+  </entry>
 
   
   <entry>
@@ -151,41 +184,6 @@ custom firmware and readers. And after a friend of mine convinced me, I finally 
 I am going to install KOReader1 and Plato2. Both are custom readers for Kobo (and other devices) with more features than the original.
 
 I understand that KOReader has a lot of options while Plato is mo...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Installing Pi-hole in my raspberry pi</title>
-    <link href="https://adolfoparra.com/posts/installing-pihole/" rel="alternate" type="text/html" title="Installing Pi-hole in my raspberry pi" />
-    <published>2024-01-01T00:00:00-05:00</published>
-  
-    <updated>2024-01-03T16:57:15-05:00</updated>
-  
-    <id>https://adolfoparra.com/posts/installing-pihole/</id>
-    <content type="text/html" src="https://adolfoparra.com/posts/installing-pihole/" />
-    <author>
-      <name>Jesús Adolfo Parra Parra</name>
-    </author>
-
-  
-    
-    <category term="self-hosted" />
-    
-  
-
-  <summary>Due to the high number of obnoxious ads in modern internet, I decided to block as much
-as I can at a DNS level using Pi-hole in my RPi.
-
-
-  DNS (Domain Name System) is the one that allow us to use www.google.com instead of
-142.251.41.68. Basically it translate domains names (like facebook.com) to IP address 
-(like 31.13.80.36), so we don’t have to remember a bunch of numbers.
-
-
-Installing it
-
-I...</summary>
 
   </entry>
 

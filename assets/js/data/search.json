@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Trying Google Search Console",
+    "url": "/posts/google-console/",
+    "categories": "tinkering",
+    "tags": "",
+    "date": "2025-07-20 00:00:00 -0400",
+    
+
+
+
+
+
+    
+    "snippet": "The Search Console is a tool from Google that help us to improve the position of our webpages in Google search results.It offers ways to measure traffic, perfomance and fix issues1.I want to give a...",
+    "content": "The Search Console is a tool from Google that help us to improve the position of our webpages in Google search results.It offers ways to measure traffic, perfomance and fix issues1.I want to give a try to make my blog a little bit better and give it more presence on the web.Currently if I check the details of the search result of one of my blog post it would look like this:Details showing that Google seems wary about my site because it couldn’t find information about itToday I want to check if the above tools could help me to improve those details.Steps  click on Start now  I chose Domain* instead of *URL prefix          We need to verify the domain through DNS      I went to AWS, then to Route53 (I manage my domains there)      We need to create a TXT record with the information provided by Google (As I already have a TXT record, I just added the new info to the previous record)        Click on verify and wait, it should said Ownership verified  Google started collecting information about your site.After a couple of hours I still don’t see any information so I decided to split this in two posts. I will continue as soon I have something to show about my website.            Search Console &#8617;      "
+  },
+  
+  {
     "title": "Fixing Survivin Mars",
     "url": "/posts/surviving-mars/",
     "categories": "gaming",
