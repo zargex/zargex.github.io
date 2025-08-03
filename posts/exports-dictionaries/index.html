@@ -29,7 +29,7 @@
   
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Add dictionaries and export notes in KOReader" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="I have been playing with KOReader for some days and so far it is very good. It has a lot of options to customize the experience of using my Kobo, at first it could be overwhelming but I think it is worth it." />
@@ -96,7 +96,7 @@
 
   <!-- Bootstrap -->
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
   
 
   <!-- Theme style -->
@@ -419,7 +419,7 @@
       <div class="container d-flex flex-column px-xxl-5">
         <!-- The Top Bar -->
 
-<header id="topbar-wrapper" aria-label="Top Bar">
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
   <div
     id="topbar"
     class="d-flex align-items-center justify-content-between px-lg-3 h-100"
@@ -449,7 +449,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -457,7 +457,7 @@
       Post
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -548,6 +548,8 @@
     
 
     <!-- take out classes -->
+    
+
     
 
     
@@ -673,9 +675,16 @@
 
 
 
-<article class="px-1">
+
+
+
+
+
+
+<article class="px-1" data-toc="true">
   <header>
     <h1 data-toc-skip>Add dictionaries and export notes in KOReader</h1>
+    
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -744,8 +753,12 @@
           </em>
         </span>
 
-        <!-- read time -->
-        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
 
 
 
@@ -769,11 +782,34 @@
 >
   <em>1 min</em> read</span>
 
+        </div>
       </div>
-      <!-- .d-flex -->
     </div>
-    <!-- .post-meta -->
   </header>
+
+  
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Add dictionaries and export notes in KOReader</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Add dictionaries and export notes in KOReader</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
     <p>I have been playing with KOReader for some days and so far it is very good.
@@ -809,7 +845,7 @@ how to add one.</p>
 
 <p>Now we can see the dictionary running in KOReader.</p>
 
-<p><a href="/assets/img/example-dict.jpg" class="popup img-link  shimmer"><img src="/assets/img/example-dict.jpg" alt="example dictionary" loading="lazy"></a>
+<p><a href="/assets/img/example-dict.jpg" class="popup img-link shimmer"><img src="/assets/img/example-dict.jpg" alt="example dictionary" loading="lazy"></a>
 <em>The dictionary dialog</em></p>
 
 <h3 id="download-dictionaries-in-koreader-directly"><span class="me-2">Download dictionaries in KOReader directly</span><a href="#download-dictionaries-in-koreader-directly" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
@@ -851,7 +887,7 @@ Both options are in the same menu.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:ebook-reader-dict">
-      <p><a href="https://github.com/BoboTiG/ebook-reader-dict/blob/master/docs/en/README.md">ebook-reader-dict</a> <a href="#fnref:ebook-reader-dict" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p><a href="https://github.com/BoboTiG/ebook-reader-dict/blob/master/docs/en/README.md">ebook-reader-dict</a> <a href="#fnref:ebook-reader-dict" class="reversefootnote" role="doc-backlink">&#8617;&#xfe0e;</a></p>
     </li>
   </ol>
 </div>
@@ -966,6 +1002,13 @@ Both options are in the same menu.</p>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/changing-battery/">Changing battery of robot vaccum Lefant M213S</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/google-console/">Trying Google Search Console</a>
         </li>
       
@@ -974,13 +1017,6 @@ Both options are in the same menu.</p>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/surviving-mars/">Fixing Survivin Mars</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/changing-battery/">Changing battery of robot vaccum Lefant M213S</a>
         </li>
       
         
@@ -1292,10 +1328,7 @@ Both options are in the same menu.</p>
 
               <h4 class="pt-0 my-2">Installing Plato and KOReader in my Kobo</h4>
               <div class="text-muted">
-                <p>Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing a
-custom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.
-
-I...</p>
+                <p>Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing a custom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.  I...</p>
               </div>
             </div>
           </a>
@@ -1336,11 +1369,6 @@ I...</p>
 </nav>
 
             
-              
-              <!-- The comments switcher -->
-
-
-            
 
             <!-- The Footer -->
 
@@ -1370,7 +1398,7 @@ I...</p>
   <p>Using the <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.2.4"
+        title="v7.3.1"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -1620,6 +1648,11 @@ I...</p>
     <!-- Embedded scripts -->
 
     
+      
+      <!-- The comments switcher -->
+
+
+    
 
     <!--
   Jekyll Simple Search loader
@@ -1637,7 +1670,7 @@ I...</p>
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('search-results'),
       json: '/assets/js/data/search.json',
-      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
+      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{content}</p>  </article>',
       noResultsText: '<p class="mt-5">Oops! No results found.</p>',
       templateMiddleware: function(prop, value, template) {
         if (prop === 'categories') {

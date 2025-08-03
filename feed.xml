@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2025-08-01T23:22:47-04:00</updated>
+  <updated>2025-08-02T22:10:53-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -12,7 +12,7 @@
   <link rel="self" type="application/atom+xml" href="https://adolfoparra.com/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://adolfoparra.com/"/>
-  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 Jesús Adolfo Parra Parra </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
@@ -38,16 +38,7 @@
     
   
 
-  <summary>The Search Console is a tool from Google that help us to improve the position of our webpages in Google search results.
-
-It offers ways to measure traffic, perfomance and fix issues1.
-
-I want to give a try to make my blog a little bit better and give it more presence on the web.
-
-Currently if I check the details of the search result of one of my blog post it would look like this:
-
-
-Details show...</summary>
+  <summary>The Search Console is a tool from Google that help us to improve the position of our webpages in Google search results.  It offers ways to measure traffic, perfomance and fix issues1.  I want to give a try to make my blog a little bit better and give it more presence on the web.  Currently if I check the details of the search result of one of my blog post it would look like this:   Details show...</summary>
 
   </entry>
 
@@ -71,16 +62,7 @@ Details show...</summary>
     
   
 
-  <summary>The problem
-I noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.
-
-The objects seems to be “floating” and the shadows are not touching anything.
-
-
-  I discovered that using the windowed mode, my second monitor keeps working, but the glitches still.
-
-
-I added some photos be...</summary>
+  <summary>The problem I noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.  The objects seems to be “floating” and the shadows are not touching anything.     I discovered that using the windowed mode, my second monitor keeps working, but the glitches still.   I added some photos be...</summary>
 
   </entry>
 
@@ -90,7 +72,7 @@ I added some photos be...</summary>
     <link href="https://adolfoparra.com/posts/changing-battery/" rel="alternate" type="text/html" title="Changing battery of robot vaccum Lefant M213S" />
     <published>2025-05-10T00:00:00-04:00</published>
   
-    <updated>2025-05-10T00:00:00-04:00</updated>
+    <updated>2025-08-02T22:02:06-04:00</updated>
   
     <id>https://adolfoparra.com/posts/changing-battery/</id>
     <content type="text/html" src="https://adolfoparra.com/posts/changing-battery/" />
@@ -100,26 +82,11 @@ I added some photos be...</summary>
 
   
     
-    <category term="Tinkering" />
+    <category term="tinkering" />
     
   
 
-  <summary>Two weeks ago I noticed that M213S wasn’t charging correctly (the led was red and it was beeping awfuly loud), so I thought that maybe it was the battery.
-
-
-  I bought this vaccum used a few years ago thus the lifespan I think it was normal.
-
-
-The new battery
-I bought this one in Amazon1 (but you can find it cheapear in Aliexpress)
-
-The new battery
-
-The steps I did to do the replacement:
-
-
-  
- ...</summary>
+  <summary>Two weeks ago I noticed that M213S wasn’t charging correctly (the led was red and it was beeping awfuly loud), so I thought that maybe it was the battery.     I bought this vaccum used a few years ago thus the lifespan I think it was normal.   The new battery I bought this one in Amazon1 (but you can find it cheapear in Aliexpress)  The new battery  The steps I did to do the replacement:       ...</summary>
 
   </entry>
 
@@ -143,18 +110,7 @@ The steps I did to do the replacement:
     
   
 
-  <summary>I have been playing with KOReader for some days and so far it is very good.
-It has a lot of options to customize the experience of using my Kobo, at first it
-could be overwhelming but I think it is worth it.
-
-Now, I really missed it didn’t have a dictionary included. So let’s see 
-how to add one.
-
-How to add a dictionary to KOReader
-
-
-  Find a dictionary in the StarDict format.
-  Copy the dicti...</summary>
+  <summary>I have been playing with KOReader for some days and so far it is very good. It has a lot of options to customize the experience of using my Kobo, at first it could be overwhelming but I think it is worth it.  Now, I really missed it didn’t have a dictionary included. So let’s see  how to add one.  How to add a dictionary to KOReader     Find a dictionary in the StarDict format.   Copy the dicti...</summary>
 
   </entry>
 
@@ -178,12 +134,7 @@ How to add a dictionary to KOReader
     
   
 
-  <summary>Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing a
-custom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.
-
-I am going to install KOReader1 and Plato2. Both are custom readers for Kobo (and other devices) with more features than the original.
-
-I understand that KOReader has a lot of options while Plato is mo...</summary>
+  <summary>Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing a custom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.  I am going to install KOReader1 and Plato2. Both are custom readers for Kobo (and other devices) with more features than the original.  I understand that KOReader has a lot of options while Plato is mo...</summary>
 
   </entry>
 
