@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2025-08-02T22:45:13-04:00</updated>
+  <updated>2025-08-08T16:15:23-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>How I expanded my LUKS and LV partitions</title>
+    <link href="https://adolfoparra.com/posts/expanding-luks-lvm/" rel="alternate" type="text/html" title="How I expanded my LUKS and LV partitions" />
+    <published>2025-08-08T00:00:00-04:00</published>
+  
+    <updated>2025-08-08T00:00:00-04:00</updated>
+  
+    <id>https://adolfoparra.com/posts/expanding-luks-lvm/</id>
+    <content type="text/html" src="https://adolfoparra.com/posts/expanding-luks-lvm/" />
+    <author>
+      <name>Jesús Adolfo Parra Parra</name>
+    </author>
+
+  
+    
+    <category term="tinkering" />
+    
+  
+
+  <summary>I used to dual boot in a 1 TB nvme, but it was almost full so I got a new nvme disk of 2TB. And I wanted to use the new disk only for Linux and the old one for Windows.  lsblk looked like this:  lsblk  NAME                MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS nvme0n1             259:0    0   1.8T  0 disk   nvme1n1             259:1    0 931.5G  0 disk   ├─nvme1n1p1         259:2    0   100M  0...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>I have been playing with KOReader for some days and so far it is very good. It has a lot of options to customize the experience of using my Kobo, at first it could be overwhelming but I think it is worth it.  Now, I really missed it didn’t have a dictionary included. So let’s see  how to add one.  How to add a dictionary to KOReader     Find a dictionary in the StarDict format.   Copy the dicti...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Installing Plato and KOReader in my Kobo</title>
-    <link href="https://adolfoparra.com/posts/flashing-kobo/" rel="alternate" type="text/html" title="Installing Plato and KOReader in my Kobo" />
-    <published>2024-01-11T00:00:00-05:00</published>
-  
-    <updated>2024-02-11T23:24:52-05:00</updated>
-  
-    <id>https://adolfoparra.com/posts/flashing-kobo/</id>
-    <content type="text/html" src="https://adolfoparra.com/posts/flashing-kobo/" />
-    <author>
-      <name>Jesús Adolfo Parra Parra</name>
-    </author>
-
-  
-    
-    <category term="kobo" />
-    
-  
-
-  <summary>Since a bought my Kobo Libra H2O, I have been thinking about tinker it a little bit installing a custom firmware and readers. And after a friend of mine convinced me, I finally decided to do it.  I am going to install KOReader1 and Plato2. Both are custom readers for Kobo (and other devices) with more features than the original.  I understand that KOReader has a lot of options while Plato is mo...</summary>
 
   </entry>
 
