@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2025-08-08T22:38:07-04:00</updated>
+  <updated>2025-08-08T22:53:12-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -20,11 +20,11 @@
 
   
   <entry>
-    <title>How I expanded my LUKS and LV partitions</title>
-    <link href="https://adolfoparra.com/posts/expanding-luks-lvm/" rel="alternate" type="text/html" title="How I expanded my LUKS and LV partitions" />
+    <title>How I expanded my LUKS and LV (Logical Volumes) partitions</title>
+    <link href="https://adolfoparra.com/posts/expanding-luks-lvm/" rel="alternate" type="text/html" title="How I expanded my LUKS and LV (Logical Volumes) partitions" />
     <published>2025-08-08T00:00:00-04:00</published>
   
-    <updated>2025-08-08T00:00:00-04:00</updated>
+    <updated>2025-08-08T22:53:10-04:00</updated>
   
     <id>https://adolfoparra.com/posts/expanding-luks-lvm/</id>
     <content type="text/html" src="https://adolfoparra.com/posts/expanding-luks-lvm/" />

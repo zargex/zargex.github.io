@@ -1,7 +1,7 @@
 [
   
   {
-    "title": "How I expanded my LUKS and LV partitions",
+    "title": "How I expanded my LUKS and LV (Logical Volumes) partitions",
     "url": "/posts/expanding-luks-lvm/",
     "categories": "tinkering",
     "tags": "debian",
