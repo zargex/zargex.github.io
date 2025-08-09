@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2025-08-08T16:15:23-04:00</updated>
+  <updated>2025-08-08T22:38:07-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -68,11 +68,11 @@
 
   
   <entry>
-    <title>Fixing Survivin Mars</title>
-    <link href="https://adolfoparra.com/posts/surviving-mars/" rel="alternate" type="text/html" title="Fixing Survivin Mars" />
+    <title>Fixing Surviving Mars</title>
+    <link href="https://adolfoparra.com/posts/surviving-mars/" rel="alternate" type="text/html" title="Fixing Surviving Mars" />
     <published>2025-05-31T00:00:00-04:00</published>
   
-    <updated>2025-05-31T19:43:52-04:00</updated>
+    <updated>2025-08-08T22:37:59-04:00</updated>
   
     <id>https://adolfoparra.com/posts/surviving-mars/</id>
     <content type="text/html" src="https://adolfoparra.com/posts/surviving-mars/" />
