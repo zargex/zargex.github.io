@@ -1,6 +1,15 @@
 [
   
   {
+    "title": "Trying Google Search Console part II",
+    "url": "/posts/google-console-ii/",
+    "categories": "tinkering",
+    "tags": "",
+    "date": "2025-08-09 00:00:00 -0400",
+    "content": "I am still learning about Google Search Console, and after some time I finally got some information.  Like performance:  I can see how many times my website appeared in a search  Or indexing:  There are some pages that aren’t being indexed  The image above shows that there are some issues that doesn’t allow google to index all my pages.  To see what is happening I went to the Indexing -&gt; Page section on the left and saw  Reasons that block the indexing of some pages  Clicking any of those reasons took me to the specific details, like Not Found (404).   This page is returing 404  I looked at the URL and that page obviously doesn’t exist. That means I wrote something wrong in that post and I need to fixed.  Now I am going to try to fix each of those issue to improve my website. "
+  },
+  
+  {
     "title": "How I expanded my LUKS and LV (Logical Volumes) partitions",
     "url": "/posts/expanding-luks-lvm/",
     "categories": "tinkering",
