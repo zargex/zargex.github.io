@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2026-01-21T23:26:46-05:00</updated>
+  <updated>2026-04-01T19:58:15-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Fixing GRUB: Showing Windows again</title>
+    <link href="https://adolfoparra.com/posts/fix-grub/" rel="alternate" type="text/html" title="Fixing GRUB: Showing Windows again" />
+    <published>2026-04-01T00:00:00-04:00</published>
+  
+    <updated>2026-04-01T00:00:00-04:00</updated>
+  
+    <id>https://adolfoparra.com/posts/fix-grub/</id>
+    <content type="text/html" src="https://adolfoparra.com/posts/fix-grub/" />
+    <author>
+      <name>Jesús Adolfo Parra Parra</name>
+    </author>
+
+  
+    
+    <category term="tinkering" />
+    
+  
+
+  <summary>In my previous post, I mentioned that GRUB isn’t showing the Windows option in  the boot menu. Let’s try to fix it.  The first thing I notice is GRUB failing to show the option but if I go to the UEFI, I can see Windows without problems, like in these two images.   GRUB with only Debian options   UEFI shows the Windows boot loader  The problem  GRUB can use something called os-prober, an small ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>The Search Console is a tool from Google that help us to improve the position of our webpages in Google search results.  It offers ways to measure traffic, perfomance and fix issues1.  I want to give a try to make my blog a little bit better and give it more presence on the web.  Currently if I check the details of the search result of one of my blog post it would look like this:   Details show...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Fixing Surviving Mars</title>
-    <link href="https://adolfoparra.com/posts/surviving-mars/" rel="alternate" type="text/html" title="Fixing Surviving Mars" />
-    <published>2025-05-31T00:00:00-04:00</published>
-  
-    <updated>2025-08-08T22:37:59-04:00</updated>
-  
-    <id>https://adolfoparra.com/posts/surviving-mars/</id>
-    <content type="text/html" src="https://adolfoparra.com/posts/surviving-mars/" />
-    <author>
-      <name>Jesús Adolfo Parra Parra</name>
-    </author>
-
-  
-    
-    <category term="gaming" />
-    
-  
-
-  <summary>The problem I noticed the linux native version of Surviving Mars has issues with my dual monitor setup. Basically it disables my vertical one but that is not all, it also has some glitches.  The objects seems to be “floating” and the shadows are not touching anything.     I discovered that using the windowed mode, my second monitor keeps working, but the glitches still.   I added some photos be...</summary>
 
   </entry>
 
