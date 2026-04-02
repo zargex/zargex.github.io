@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="Fixing GRUB: Showing Windows again" />
 <meta name="twitter:site" content="@4d0lfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-01T00:00:00-04:00","datePublished":"2026-04-01T00:00:00-04:00","description":"In my previous post, I mentioned that GRUB isn’t showing the Windows option in the boot menu. Let’s try to fix it.","headline":"Fixing GRUB: Showing Windows again","mainEntityOfPage":{"@type":"WebPage","@id":"https://adolfoparra.com/posts/fix-grub/"},"url":"https://adolfoparra.com/posts/fix-grub/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-01T20:06:18-04:00","datePublished":"2026-04-01T00:00:00-04:00","description":"In my previous post, I mentioned that GRUB isn’t showing the Windows option in the boot menu. Let’s try to fix it.","headline":"Fixing GRUB: Showing Windows again","mainEntityOfPage":{"@type":"WebPage","@id":"https://adolfoparra.com/posts/fix-grub/"},"url":"https://adolfoparra.com/posts/fix-grub/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -213,9 +213,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -721,6 +728,60 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -751,7 +812,7 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
     <h1 data-toc-skip>Fixing GRUB: Showing Windows again</h1>
     
@@ -782,6 +843,29 @@
       </span>
 
       <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1775088378"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Apr  1, 2026
+</time>
+
+        </span>
       
 
       
@@ -835,6 +919,28 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Fixing GRUB: Showing Windows again</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Fixing GRUB: Showing Windows again</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
     <p>In my previous post, I mentioned that GRUB isn’t showing the Windows option in 
@@ -849,7 +955,7 @@ I can see Windows without problems, like in these two images.</p>
 <p><a href="/assets/img/fix-grub/UEFI-boot-options.jpg" class="popup img-link shimmer"><img src="/assets/img/fix-grub/UEFI-boot-options.jpg" alt="UEFI showing Windows boot loader" loading="lazy"></a>
 <em>UEFI shows the Windows boot loader</em></p>
 
-<h1 id="the-problem">The problem</h1>
+<h2 id="the-problem"><span class="me-2">The problem</span><a href="#the-problem" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>GRUB can use something called <code class="language-plaintext highlighter-rouge">os-prober</code>, an small program that look for other operating
 systems installed, so it can create a menu entry automatically, making our lives easier.
@@ -1203,7 +1309,7 @@ nvme1n1
 
 <p>So I only need to change the <code class="language-plaintext highlighter-rouge">nvme0n1p1</code> PARTTYPE to the ESP.</p>
 
-<h1 id="solution">Solution</h1>
+<h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>I used <code class="language-plaintext highlighter-rouge">parted</code> to modify the partition. Probably you have it but if not you can 
 install it using <code class="language-plaintext highlighter-rouge">aptitude install parted</code>.</p>
@@ -1329,7 +1435,7 @@ nvme1n1
 
 <p>Success!!</p>
 
-<h1 id="test">Test</h1>
+<h2 id="test"><span class="me-2">Test</span><a href="#test" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>Let’s see what happens when I run <code class="language-plaintext highlighter-rouge">update-grub</code></p>
 
@@ -1374,7 +1480,7 @@ done
 
 <p>I boot Windows and everything worked as expected.</p>
 
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>Make sure the EFI partition has the correct settings, because while it could boot, some tools
 will fail to work properly.</p>
@@ -1717,6 +1823,12 @@ will fail to work properly.</p>
 
 
 
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             
