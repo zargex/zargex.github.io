@@ -4,7 +4,7 @@
   <id>https://adolfoparra.com/</id>
   <title>Jesús Adolfo Parra Parra</title>
   <subtitle>Tutorials, post about tech and programing, opensource, gaming and other topics I am interested on.</subtitle>
-  <updated>2026-04-01T20:06:21-04:00</updated>
+  <updated>2026-06-14T22:29:28-04:00</updated>
   <author>
     <name>Jesús Adolfo Parra Parra</name>
     <uri>https://adolfoparra.com/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Integration between Lutris and Steam both using flatpak</title>
+    <link href="https://adolfoparra.com/posts/lutris-steam-integration/" rel="alternate" type="text/html" title="Integration between Lutris and Steam both using flatpak" />
+    <published>2026-06-14T00:00:00-04:00</published>
+  
+    <updated>2026-06-14T00:00:00-04:00</updated>
+  
+    <id>https://adolfoparra.com/posts/lutris-steam-integration/</id>
+    <content type="text/html" src="https://adolfoparra.com/posts/lutris-steam-integration/" />
+    <author>
+      <name>Jesús Adolfo Parra Parra</name>
+    </author>
+
+  
+    
+    <category term="gaming" />
+    
+  
+
+  <summary>I have installed Diablo II in my machine using Lutris, but I would like to see if I can add it to my Steam.   Lutris menu  Adding the shorcut into Steam  Lutris has an option just for that, but every time I tried it didn’t work  Option to add a shortcut into Steam  I ran Lutris in the console with flatpak run net.lutris.Lutris to understand what was doing and showed me this: 2026-06-14 18:26:40...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>I used to dual boot in a 1 TB nvme, but it was almost full so I got a new nvme disk of 2TB. And I wanted to use the new disk only for Linux and the old one for Windows.  lsblk looked like this:  lsblk  NAME                MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS nvme0n1             259:0    0   1.8T  0 disk   nvme1n1             259:1    0 931.5G  0 disk   ├─nvme1n1p1         259:2    0   100M  0...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Trying Google Search Console</title>
-    <link href="https://adolfoparra.com/posts/google-console/" rel="alternate" type="text/html" title="Trying Google Search Console" />
-    <published>2025-07-20T00:00:00-04:00</published>
-  
-    <updated>2025-07-20T00:00:00-04:00</updated>
-  
-    <id>https://adolfoparra.com/posts/google-console/</id>
-    <content type="text/html" src="https://adolfoparra.com/posts/google-console/" />
-    <author>
-      <name>Jesús Adolfo Parra Parra</name>
-    </author>
-
-  
-    
-    <category term="tinkering" />
-    
-  
-
-  <summary>The Search Console is a tool from Google that help us to improve the position of our webpages in Google search results.  It offers ways to measure traffic, perfomance and fix issues1.  I want to give a try to make my blog a little bit better and give it more presence on the web.  Currently if I check the details of the search result of one of my blog post it would look like this:   Details show...</summary>
 
   </entry>
 
